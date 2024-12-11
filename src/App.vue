@@ -163,6 +163,10 @@ button {
     margin-top: 1em;
   }
 
+  &.check{
+    color: green;
+  }
+
   &.check:hover {
     border-color: #64ffaa;
   }
