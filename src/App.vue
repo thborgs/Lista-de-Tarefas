@@ -100,3 +100,133 @@ function removerConcluidas() {
 </section>
 </template>
 
+<style lang="scss">
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+
+  &:hover {
+    color: #535bf2;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.2em 1em;
+  margin-left: 0.5em;
+  margin-bottom: 0.7em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &.add {
+    margin-top: 1em;
+  }
+
+  &.check:hover {
+    border-color: #64ffaa;
+  }
+
+  &.remover:hover {
+    border-color: #ff6464;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.sublinhada {
+  text-decoration: line-through;
+  color: gray;
+}
+
+ul {
+  list-style: none;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+
+span {
+  flex: 1;
+  text-align: left;
+  margin-right: 16px;
+}
+
+.lista {
+  border: solid #535bf2;
+  border-radius: 18px;
+}
+</style>
